@@ -6,11 +6,18 @@ let quotePosition = document.getElementById("quotePosition");
 let quotePhoto = document.getElementById("quotePhoto");
 
 function handleQuoteNext() {
-    quoteBack.style.fontSize = "100px";
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        quoteBack.style.fontSize = "40px";
+        quoteNext.style.fontSize = "15px";
+    }
+
+    else {
+        quoteBack.style.fontSize = "100px";
+        quoteNext.style.fontSize = "70px";
+    }
     quoteBack.style.opacity = "1";
     quoteBack.style.color = "#f8e7a1";
 
-    quoteNext.style.fontSize = "70px";
     quoteNext.style.opacity = "0.5";
     quoteNext.style.color = "#ffffff";
 
@@ -22,11 +29,18 @@ function handleQuoteNext() {
 }
 
 function handleQuoteBack() {
-    quoteBack.style.fontSize = "70px";
+    if (window.matchMedia("(max-width: 600px)").matches) {
+        quoteBack.style.fontSize = "15px";
+        quoteNext.style.fontSize = "40px";
+    }
+
+    else {
+        quoteBack.style.fontSize = "70px";
+        quoteNext.style.fontSize = "100px";
+    }
     quoteBack.style.opacity = "0.5";
     quoteBack.style.color = "#ffffff";
 
-    quoteNext.style.fontSize = "100px";
     quoteNext.style.opacity = "1";
     quoteNext.style.color = "#f8e7a1";
 
