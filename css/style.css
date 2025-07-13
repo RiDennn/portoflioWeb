@@ -148,7 +148,6 @@ header {
 .hero-section {
   display: flex;
   width: 100%;
-  height: 100vh;
   padding-top: 110px;
   margin: 0;
 }
@@ -159,6 +158,11 @@ header {
 }
 
 .padding1 {
+  height: 100vh;
+}
+
+
+.hero {
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -221,10 +225,11 @@ nav a:hover {
 
 .hero-container-footer {
   background-image: url("../image/hero-container-footer.png");
-  width: 100vw;
   height: 120px;
+  width: 100%;
+  padding: 0px 100px;
   position: relative;
-  bottom: 200px;
+  bottom: 150px;
   display: flex;
   justify-items: flex-end;
   align-items: center;
@@ -508,9 +513,14 @@ hr {
   }
 
   .padding1 {
+    padding-left: 0;
+    padding-right: 0;
+    height: 90vh;
+  }
+
+  .hero {
     padding-left: 10%;
     padding-right: 10%;
-    height: 90vh;
   }
 
   /* First Section */
@@ -604,7 +614,6 @@ hr {
   .hero-container-footer {
     height: 45px;
     width: 100%;
-    position: relative;
     bottom: 0px;
     display: flex;
     justify-items: flex-end;
@@ -809,13 +818,13 @@ hr {
 }
 
 .quote-content {
-  padding-left: 60px;
+  padding-left: 30px;
   width: 100%;
 }
 
 .quote-photo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 10px;
 }
 
@@ -846,17 +855,17 @@ hr {
 .quote-button {
   display: flex;
   flex-direction: row;
-  font-size: 20px;
   cursor: pointer;
 }
 
 .quote-back  {
   opacity: 30%;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .quote-next {
   color: #f8e7a1;
+  font-size: 40px;
 }
 
   /* Fifth Section */
