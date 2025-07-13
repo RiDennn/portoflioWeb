@@ -1,0 +1,217 @@
+body {
+  background-image: url("../image/contact.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 85vh;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.font-subheading {
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 35px;
+}
+
+.padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+nav a {
+  opacity: 80%;
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+}
+
+nav a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #f8e7a1;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container {
+  border: 2px solid #0d1b34;
+  border-radius: 20px;
+  background-color: #091427;
+  margin-top: 60px;
+  padding: 30px 50px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.social-container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 10px 0px 0px;
+  font-size: 40px;
+}
+
+.font-contact {
+  font-size: 20px;
+  opacity: 50%;
+  margin-bottom: 20px;
+}
+
+.font-social-type {
+  opacity: 50%;
+  margin: 20px 20px 10px;
+}
+
+.font-social-contact {
+  font-size: 16px;
+  margin: 0px 20px 10px;
+}
+
+.wa {
+  padding: 5px 0px 0px;
+  width: 60px;
+  opacity: 50%;
+}
+
+.ig {
+  padding: 5px 0px 0px;
+}
+
+.github {
+  padding: 5px 0px 0px;
+  width: 60px;
+  opacity: 50%;
+}
+
+@media (max-width: 767px)  { 
+  body {
+    height: 100vh;
+  }
+
+  .padding {
+    padding: 0px 50px;
+  }
+
+  .font-heading {
+    font-size: 17px;
+  }
+
+  .font-subheading {
+    font-size: 10px;
+  }
+
+  nav {
+    padding-top: 25px;
+  }
+
+  .main-container {
+    width: 60%;
+  }
+
+  .sample {
+    width: 130px;
+  }
+
+  h1 {
+    font-size: 15px;
+    margin: 20px 0px 0px;
+  }
+
+  .social-container {
+    flex-direction: column;
+    margin-block: 0px;
+    width: 100%;
+  }
+
+  .social-container-content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .social-container-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+
+  .font-contact {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .wa {
+    padding: 10px 0px 0px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .ig {
+    width: 40px;
+    height: 40px;
+    padding: 15px 0px;
+    margin-left: 30px;
+  }
+
+  .github {
+    width: 50px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .font-social-type, .font-social-contact {
+    width: 100%;
+    margin: 2px 0px;
+    padding-left: 60px;
+    text-align: left;
+    font-size: 13px;
+  }
+}
