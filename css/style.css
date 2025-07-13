@@ -1,10 +1,14 @@
 /* ========================= */
 /* Global Styles             */
 /* ========================= */
+html {
+  box-sizing: border-box;
+  height: max-content;
+}
+
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -252,6 +256,7 @@ nav a:hover {
 .service-section {
   display: flex;
   align-items: flex-start;
+  padding-top: 100px;
 }
 
 .service-cards{
@@ -515,7 +520,7 @@ hr {
   .padding1 {
     padding-left: 0;
     padding-right: 0;
-    height: 90vh;
+    height: 100%;
   }
 
   .hero {
